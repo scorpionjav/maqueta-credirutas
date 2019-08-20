@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Detalles del Servicio</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/credirutas.css" />
+		<link rel="stylesheet" href="assets/css/views/service-details/service-details.css" />
+	</head>
+	<body>
+		<div class="row h-100 mx-auto justify-content-center align-items-center">
+			<button id="openVeloButton" href="#" style="background-color: black; color:white" >Abrir Velo</button>
+		</div>
+
+		<div id="veloModal" class="">
+			<span id="closeVeloButton" class="color-white">x</span>
+			<div class="container-fluid h-100 px-0">
+				<div class="row h-100 mx-auto justify-content-center align-items-center">
+					<div class="col-10 col-md-10 col-lg-8 col-xl-8">					
+						<div class="row">
+							<div class="col-12 col-md-8 text-center text-md-left">
+								<h1 class="color-white daxProBold d-inline">Datos del servicio</h1>
+								<div class="row mt-2 mt-lg-4 text-left">
+									<div class="col-12 col-md-6">
+										<div class="form-group mb-0">
+											<label class="color-yellow mb-0" for="ids">IDS</label>
+											<input id="ids" type="text" class="form-control w-100 text-center" placeholder="">
+										</div>
+									</div>
+									<div class="col-12 col-md-6 mt-2 mt-md-0">
+										<div class="form-group mb-0">
+											<label class="color-yellow mb-0" for="paymentType">Tipo de Pago</label>
+											<input id="paymentType" type="text" class="form-control w-100 text-center" placeholder="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4 mt-3 my-md-auto text-center">
+								<h2 class="color-black daxProBold d-inline-block py-md-2 py-lg-4">Valoración</h2>
+								<div class="d-flex justify-content-center">
+										<svg class="svgWheel" fill="gray" data-rating="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+											<path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+										</svg><svg class="svgWheel" fill="gray" data-rating="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+											<path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+										</svg><svg class="svgWheel" fill="gray" data-rating="3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+											<path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+										</svg><svg class="svgWheel" fill="gray" data-rating="4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+											<path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+										</svg><svg class="svgWheel" fill="gray" data-rating="5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+											<path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+										</svg>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-md-1 mt-lg-2">
+							<div class="col-12 col-md-4">
+								<label class="color-yellow mb-0" for="user">Usuario</label>
+								<input id="user" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+							<div class="col-12 col-md-8 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="name">Nombre y apellido</label>
+								<input id="name" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+						</div>
+						<div class="row mt-2 mt-md-1 mt-lg-2">
+							<div class="col-12 col-md-4">
+								<label class="color-yellow mb-0" for="amount">Monto</label>
+								<input id="amount" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+							<div class="col-12 col-md-4 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="discount">% descuento</label>
+								<input id="discount" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+							<div class="col-12 col-md-4 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="total">Monto total</label>
+								<input id="total" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+						</div>
+						<div class="row mt-2 mt-md-1 mt-lg-2">
+							<div class="col-12 col-md-6">
+								<label class="color-yellow mb-0" for="date">Fecha</label>
+								<input id="date" type="date" class="form-control w-100 text-center" placeholder="">
+							</div>
+							<div class="col-12 col-md-6 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="status">Estado de transacción</label>
+								<input id="status" type="text" class="form-control w-100 text-center" placeholder="">
+							</div>
+						</div>
+						<img src="assets/img/service-details/flecha.png" class="img-fluid mt-3 my-md-1 my-lg-3 w-100" alt="">
+						<div class="row">
+							<div class="col-12 col-md-6 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="from">Origen</label>
+								<<textarea id="from" class="form-control w-100 text-justify" rows="3" cols="3"></textarea>
+							</div>
+							<div class="col-12 col-md-6 mt-2 mt-md-0">
+								<label class="color-yellow mb-0" for="to">Destino</label>
+								<<textarea id="to" class="form-control w-100 text-justify" rows="3" cols="3"></textarea>
+							</div>
+						</div>
+						<div class="text-center text-md-left ml-md-4 mt-3 mt-lg-4">
+							<a id="back" class="color-white px-3 py-1" href="#">Atrás</a>
+						</div>
+					</div>
+				</div>
+			</div>            
+		</div>
+		<!-- Script -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="assets/js/general.js"></script>
+		<script src="assets/js/views/service-details/service-details.js"></script>
+	</body>
+</html>

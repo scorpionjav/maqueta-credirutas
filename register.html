@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Registrarse</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/credirutas.css" />
+    <link rel="stylesheet" href="assets/css/views/register/register.css" />
+  </head>
+
+<body id="register">
+
+  <nav class="navbar navbar-dark navbar-expand-md bg-black-opacity w-100 py-md-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" width="200" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item py-md-2">
+            <a href="index.html" class="nav-link pb-0 d-sm-inline-block fontDaxProBold">Home</a>
+          </li>
+          <li class="nav-item py-md-2">
+            <a href="login.html" class="nav-link pb-0 d-sm-inline-block fontDaxProBold">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="registerSection cr-margin-2">
+    <div class="container">
+      <div class="row preRegister">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+          <h2 class="bg-yellow color-white font-lg text-md-left text-lg-right text-xl-right p-2">Tipo de usuario</h2>
+          <p class="p-1 text-justify p-1 text-justify w-75 float-right">Si vas contratar un servicio con CrediRutas selecciona
+            <strong>Pasajero</strong>, encaso de ofrecer un servicio haz click en
+            <strong>Afiliado.</strong>
+          </p>
+        </div>
+        <div class="col-12 col-sm-8 mx-sm-auto col-md-6 mx-md-auto col-lg-6 col-xl-6 mr-auto pl-xl-5 pr-sm-0">
+          <div id="registerSelectAccount" class="py-xl-5 py-lg-5 py-sm-2 py-5">
+            <div class="container">
+              <img src="assets/img/registro/bg_type_account.png" class="img-fluid bg_type_account">
+              <div class="row align-items-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ml-auto px-0 account-type-left selectAccountDivider">
+                  <a href="#" class="account-type-icon cr-no-outline" data-id="cuenta-afiliados" data-icon-img="assets/img/registro/icon_afiliados.png">
+                    <img id="afiliados-normal" src="assets/img/registro/icon_afiliados.png" class="img-fluid">
+                  </a>
+                  <!--<a href="#" class="changeSelection color-blue cr-no-outline d-none"><img src="assets/img/registro/row_selection.png" class="img-fluid">Cambiar Seleccion</a>-->
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mr-auto px-0 account-type-right">
+                  <a href="#" id="cuenta-pasajeros" class="account-type-icon cr-no-outline" data-id="cuenta-pasajeros" data-icon-img="assets/img/registro/icon_pasajeros.png"
+                    data-label="IDT" data-select="IDT" data-id-img="assets/img/registro/ingrese_cedula.png">
+                    <img src="assets/img/registro/icon_pasajeros.png" class="img-fluid">
+                  </a>
+                </div>
+
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end registerSelectAccount-->
+        </div>
+      </div>
+      <!-- end preRegister -->
+
+      <div class="row showRegister d-none align-items-center">
+        <div class="col-10 text-center mx-auto col-sm-10 col-md-10 col-lg-10 col-xl-3 pl-md-0 pl-sm-0 pl-xl-3 effWizardForm">
+          <h1 class="d-block color-blue font-xl fontDaxProBold px-lg-2 text-left text-xl-center">Registro</h1>
+          <span class="font-sm bg-yellow color-white d-block d-xl-inline-block py-1 px-2 fontDaxProBold text-left text-xl-center">Te estas registrando como:
+          </span>
+          <a href="#" data-id="" data-icon-img="" class="text-right cr-no-outline">
+            <img id="registerHowImg" src="" class="img-fluid">
+          </a>
+          <a href="#" class="changeSelectionRegister d-block color-blue cr-no-outline font-sm text-left pb-2 pb-xl-0">
+            <img src="assets/img/registro/row_selection.png" class="img-fluid">Cambiar Seleccion</a>
+        </div>
+        <div class="col-10 mx-auto col-sm-10 col-md-10 col-lg-10 col-xl-9 cr-box-shadow-1 colWizardForm effWizardForm">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="stepsArea">
+                <ul class="nav nav-tabs pb-1 pt-3" role="tablist">
+                  <li role="presentation" class="nav-item text-center ">
+                    <a href="#step1" class="nav-link active" data-toggle="tab" aria-controls="step1" role="tab">
+                      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.13 71.13">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #e6e6e6;
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                            }
+                          </style>
+                        </defs>
+                        <title>1</title>
+                        <path class="cls-1" d="M33.86,47.88V22.82a24,24,0,0,1-7.75,1.58l-.91-4.5C31.42,19.19,35,16.85,36.06,15h5.4v32.9Z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li role="presentation" class="nav-item text-center  disableNextLi">
+                    <a href="#step2" class="nav-link " data-toggle="tab" aria-controls="step2" role="tab">
+                      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.13 71.13">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #e6e6e6;
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                            }
+                          </style>
+                        </defs>
+                        <title>2</title>
+                        <path class="cls-1" d="M23.46,47.88,34.65,31.67c2.34-3.4,2.87-5.12,2.87-7,0-3-1.67-4.73-5.36-4.73a12.15,12.15,0,0,0-5.88,1.29l-1.77-4.73a20.22,20.22,0,0,1,9.33-2c8.56,0,11.48,4.83,11.48,9.23,0,2.73-1.29,5.55-4.35,9.42l-6.7,8.56H45.5v6.17Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li role="presentation" class="nav-item text-center  disableNextLi">
+                    <a href="#step3" class="nav-link " data-toggle="tab" aria-controls="step3" role="tab">
+                      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.13 71.13">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #e6e6e6;
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                            }
+                          </style>
+                        </defs>
+                        <title>3</title>
+                        <path class="cls-1" d="M32.69,48.36c-4.4,0-7.46-.72-9.66-1.87l2-5.07a14.15,14.15,0,0,0,6.41,1.39c3.54,0,5.79-1.82,5.79-4.93,0-4.35-4.16-5.36-8-5.26V28.71c4.69-.48,7.32-2.44,7.32-5.31,0-2.44-1.87-3.63-4.59-3.63a14.77,14.77,0,0,0-6.12,1.29l-1.82-4.69a21.18,21.18,0,0,1,9.18-1.87c6.65,0,10.81,3.11,10.81,8,0,3.63-3,5.88-5.21,6.79v.1c3.49,1.24,6.55,3.59,6.55,8.51C45.27,44.16,40.1,48.36,32.69,48.36Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li role="presentation" class="nav-item text-center disableNextLi">
+                    <a href="#step4" class="nav-link" data-toggle="tab" aria-controls="complete" role="tab">
+                      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.13 71.13">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #e6e6e6;
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                            }
+                          </style>
+                        </defs>
+                        <title>4</title>
+                        <path class="cls-1" d="M43.88,41.38v6.5h-7v-6.5H23.79V37L36.56,15h7.32V37.32h2.49v4.07ZM34.6,26.75,28.48,37.32h8.37V26.89c0-2.63.14-4.88.14-4.88S36.13,24.12,34.6,26.75Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li role="presentation" class="nav-item text-center disableNextLi">
+                    <a href="#step5" class="nav-link disable" data-toggle="tab" aria-controls="complete" role="tab">
+                      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.13 71.13">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #e6e6e6;
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                            }
+                          </style>
+                        </defs>
+                        <title>5</title>
+                        <path class="cls-1" d="M33.9,48.4c-4.3,0-7.4-0.7-9.7-1.9l2-5.1c1.3,0.7,3.5,1.4,6.5,1.4c3.3,0,5.8-1.8,5.8-5c0-3-1.8-5.5-7.9-5.5
+                            c-1.3,0-2.9,0.1-4.6,0.4L27.8,15H45v6.2H33l-0.6,7c0.5,0,1.1,0,1.6,0c8.8,0,12.4,4.2,12.4,9.9C46.5,43.9,41.4,48.4,33.9,48.4z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <!--end row steps -->
+          <div class="registerStepArea">
+            <div class="row h-100">
+              <div class="col-12 col-sm-12 col-lg-12 col-xl-12 pt-1 pb-2">
+                <form id="formRegister" role="form">
+                  <div class="container">
+                    <div class="tab-content">
+
+                      <div class="tab-pane active wizardpt pt-xl-2" role="tabpanel" id="step1">
+
+                        <div class="row align-items-center">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 text-center">
+                            <img id="idHowImg" src="" class="img-fluid">
+                            <label class="custom-file d-none">
+                              <input type="file" id="file" class="custom-file-input" required>
+                              <span class="custom-file-control"></span>
+                            </label>
+                            <ul class="listImgButtons">
+                              <li>
+                                <a href="" id="actualizarImg">
+                                  <img src="assets/img/registro/actualizar.png" class="img-fluid">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" id="cortarImg">
+                                  <img src="assets/img/registro/cortar.png" class="img-fluid">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" id="subirImg">
+                                  <img src="assets/img/registro/subir.png" class="img-fluid">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <div class="input-group input-user row mb-1">
+                              <label id="labelId" for="registerIdentification" class="fontDaxProBold color-blue w-100 mb-0"></label>
+                              <span class="input-group-addon p-0 " id="">
+                                <span id="selectIDT" class="d-none px-sm-4 py-sm-2 selectId">
+                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                                <select id="selectCedula" class="custom-select cr-custom-select py-0 d-none selectId" data-info="Cedula">
+                                  <option value="V" selected>V-</option>
+                                  <option value="E">E-</option>
+                                </select>
+                                <select id="selectRif" class="custom-select cr-custom-select py-0 d-none selectId" data-info="Rif">
+                                  <option value="J" selected>J-</option>
+                                  <option value="G">G-</option>
+                                </select>
+                              </span>
+                              <input type="text" class="form-control form-control-sm" id="" aria-describedby="basic-addon3">
+                            </div>
+                            <!-- end input ci-rif-idt-->
+                            <div class="input-group input-user row mb-1">
+                              <label for="registerEmail" class="fontDaxProBold color-blue w-100 mb-0">Correo Electronico</label>
+
+                              <span class="input-group-addon" id="">
+                                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                              </span>
+                              <input type="email" class="form-control form-control-sm" placeholder="Email" id="" aria-describedby="basic-addon3">
+                            </div>
+                            <!-- end input email -->
+                            <div class="input-group input-user row mb-1">
+                              <label for="registerEmail" class="fontDaxProBold color-blue w-100 mb-0">Confirmar Correo Electronico</label>
+
+                              <span class="input-group-addon" id="">
+                                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                              </span>
+                              <input type="email" class="form-control form-control-sm" placeholder="Email" id="" aria-describedby="basic-addon3">
+                            </div>
+                            <!-- end input confirm email -->
+                            <div class="input-group input-user row mb-1">
+                              <label for="registerPhone" class="fontDaxProBold color-blue w-100 mb-0">Telefono</label>
+
+                              <span class="input-group-addon p-0" id="basic-addon3">
+                                <select id="registerPhone" class="custom-select cr-custom-select py-0 " data-info="phone">
+                                  <option value="412" selected>412</option>
+                                  <option value="416" selected>416</option>
+                                  <option value="424" selected>424</option>
+                                </select>
+                              </span>
+                              <input type="text" class="form-control form-control-sm" id="loginUser" aria-describedby="basic-addon3">
+                            </div>
+                            <!-- end input tlf -->
+                          </div>
+                          <!-- end inputs-->
+
+                        </div>
+                        <!-- end row -->
+
+                        <!--Buttons-->
+                        <!--<button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">Siguiente</button>-->
+                        <div class="row panelButtonsSteps">
+                          <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+                            <button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">Siguiente</button>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--end step1 -->
+
+                      <div class="tab-pane wizardpt pt-xl-2" role="tabpanel" id="step2">
+                        <div class="row align-items-center">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 text-center">
+                            <img id="" src="assets/img/registro/foto_perfil.png" class="img-fluid">
+                            <label class="custom-file d-none">
+                              <input type="file" id="file" class="custom-file-input" required>
+                              <span class="custom-file-control"></span>
+                            </label>
+                            <ul class="listImgButtons">
+                              <li>
+                                <a href="" id="actualizarImg">
+                                  <img src="assets/img/registro/actualizar.png" class="img-fluid">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" id="cortarImg">
+                                  <img src="assets/img/registro/cortar.png" class="img-fluid">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" id="subirImg">
+                                  <img src="assets/img/registro/subir.png" class="img-fluid">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <div class="row">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerName" class="fontDaxProBold color-blue w-100 mb-0">Nombres</label>
+                                  <span class="input-group-addon" id="">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                  </span>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Nombres" id="registerName" aria-describedby="basic-addon3">
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerLastName" class="fontDaxProBold color-blue w-100 mb-0">Apellidos</label>
+                                  <span class="input-group-addon" id="">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                  </span>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Apellidos" id="registerLastName" aria-describedby="basic-addon3">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end row 1 col der -->
+                            <div class="row">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerCountry" class="fontDaxProBold color-blue w-100 mb-0">Genero</label>
+                                  <span class="input-group-addon" id="basic-addon3">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                  </span>
+                                  <select class="custom-select mb-2 mb-sm-0 cr-selectForm-lg selectForm" id="">
+                                    <option selected>Seleccione...</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end row 2 col der -->
+
+                            <div class="row">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerCountry" class="fontDaxProBold color-blue w-100 mb-0">Estado</label>
+                                  <span class="input-group-addon" id="basic-addon3">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  </span>
+                                  <select class="custom-select mb-2 mb-sm-0 selectForm locationSelect-lg" id="">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Lara</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerCity" class="fontDaxProBold color-blue w-100 mb-0">Ciudad</label>
+                                  <span class="input-group-addon" id="basic-addon3">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  </span>
+                                  <select class="custom-select mb-2 mb-sm-0 selectForm locationSelect-lg" id="">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Barquisimeto</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end row 3 col der -->
+
+                            <div class="row">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="input-group input-user row mb-1">
+                                  <label for="registerAddress" class="fontDaxProBold color-blue w-100 mb-0">Direccion fiscal</label>
+                                  <span class="input-group-addon" id="basic-addon3">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  </span>
+                                  <textarea class="form-control" id="exampleTextarea" rows="2" placeholder="Direccion fiscal"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end row 4 col der -->
+
+                          </div>
+
+                        </div>
+                        <!-- end row-->
+                        <!--Buttons-->
+                        <div class="row panelButtonsSteps">
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn color-blue float-left mt-2 mb-0 py-1 prev-step">Volver</button>
+                          </div>
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">Siguiente</button>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- end step 2 -->
+
+                      <div class="tab-pane wizardpt pt-xl-2" role="tabpanel" id="step3">
+                        <div class="row">
+                          <a href="#" class="changeService d-none color-blue cr-no-outline">
+                            <img src="assets/img/registro/row_selection.png" class="img-fluid">Cambiar Seleccion</a>
+                          <div class="col-12 col-sm-12 col-lg-12 col-xl-8 mx-auto">
+
+                            <div class="row  categoryService">
+                              <div class="col-12 col-sm-12 col-lg-12 col-xl-12 text-center">
+                                <h5 class="text-center color-blue border-bottom-color d-inline-block">Seleccione
+                                  <strong>la categoria</strong> de tu servicio</h5>
+                              </div>
+                              <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-category-service" data-id="Maritimo">
+                                  <img src="assets/img/registro/TipoServicios/maritimo.png" class="img-fluid">
+                                </a>
+                              </div>
+                              <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-category-service" data-id="Terrestre">
+                                  <img src="assets/img/registro/TipoServicios/terrestre.png" class="img-fluid">
+                                </a>
+                              </div>
+                              <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-category-service" data-id="Aereo">
+                                  <img src="assets/img/registro/TipoServicios/aereo.png" class="img-fluid">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- end category service -->
+                            <div class="row servicesType d-none">
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Mototaxi">
+                                  <img src="assets/img/registro/TipoServicios/mototaxi.png" class="img-fluid serviceNormal">
+                                  <img src="assets/img/registro/TipoServicios/mototaxi_opacity.png" class="img-fluid serviceOpacity d-none">
+                                </a>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Taxi">
+                                  <img src="assets/img/registro/TipoServicios/taxi.png" class="img-fluid serviceNormal">
+                                  <img src="assets/img/registro/TipoServicios/taxi_opacity.png" class="img-fluid serviceOpacity d-none">
+                                </a>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Ambulancia">
+                                  <img src="assets/img/registro/TipoServicios/ambulancia.png" class="img-fluid serviceNormal">
+                                  <img src="assets/img/registro/TipoServicios/ambulancia_opacity.png" class="img-fluid serviceOpacity d-none">
+                                </a>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Grua">
+                                  <img src="assets/img/registro/TipoServicios/grua.png" class="img-fluid serviceNormal">
+                                  <img src="assets/img/registro/TipoServicios/grua_opacity.png" class="img-fluid serviceOpacity d-none">
+                                </a>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Escolar">
+                                  <img src="assets/img/registro/TipoServicios/escolar.png" class="img-fluid serviceNormal">
+                                  <img src="assets/img/registro/TipoServicios/escolar_opacity.png" class="img-fluid serviceOpacity d-none">
+                                </a>
+                              </div>
+                              <div class="col-6 col-sm-4 col-lg-4 col-xl-4">
+                                <a href="" class="icon-service" data-id="Cargas">
+                                  <img src="assets/img/registro/TipoServicios/cargas.png" class="img-fluid serviceNormal">
+                                  <!--<img src="assets/img/registro/TipoServicios/cargas_opacity.png" class="img-fluid serviceOpacity d-none">-->
+                                </a>
+                              </div>
+                              <select class="custom-select mb-2 mb-sm-0 cr-selectForm-xl" id="selectService">
+                                <option selected>Seleccione su tipo de servicio...</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Buttons-->
+                        <div class="row panelButtonsSteps categoryStepsButtons">
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn color-blue float-left mt-2 mb-0 py-1 prev-step">Volver</button>
+                          </div>
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">Siguiente</button>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- end step 3 -->
+
+                      <div class="tab-pane wizardpt pt-xl-2" role="tabpanel" id="step4">
+                        <div class="row">
+                          <div class="col-12 col-sm-12 col-lg-12 col-xl-8 mx-auto containerStep">
+                            <div class="row">
+                              <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
+                                <label class="fontDaxProBold color-blue w-100 mb-0">¿Viene usted referenciado por alguna persona o empresa?</label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Si</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">No</span>
+                                </label>
+                                <div class="input-group row mb-1 ml-sm-1 mt-sm-3 mr-sm-3">
+                                  <label for="registerName" class="fontDaxProBold color-blue w-100 mb-0">Lorem ipsum</label>
+                                  <span class="input-group-addon" id="">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                  </span>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Lorem ipsum" id="" aria-describedby="basic-addon3">
+                                </div>
+                              </div>
+                              <!-- end col1 -->
+                              <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
+                                <label class="fontDaxProBold color-blue w-100 mb-0">¿Viene usted referenciado por alguna persona o empresa?</label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio1" name="radio2" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Si</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                  <input id="radio2" name="radio2" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">No</span>
+                                </label>
+                                <div class="input-group row mb-1 ml-sm-1 mt-sm-3 mr-sm-3">
+                                  <label for="registerName" class="fontDaxProBold color-blue w-100 mb-0">Lorem ipsum</label>
+                                  <span class="input-group-addon" id="">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                  </span>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Lorem ipsum" id="" aria-describedby="basic-addon3">
+                                </div>
+                              </div>
+                              <!-- end col-2 -->
+                            </div>
+                          </div>
+                        </div>
+                        <!--Buttons-->
+                        <div class="row panelButtonsSteps">
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn color-blue float-left mt-2 mb-0 py-1 prev-step">Volver</button>
+                          </div>
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">Siguiente</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end step 4-->
+
+                      <div class="tab-pane wizardpt pt-xl-2" role="tabpanel" id="step5">
+
+                        <div class="row">
+                          <div class="col col-12 col-lg-10 col-xl-10 mx-auto registerInfoStep5">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-lg-4 col-xl-4 ml-sm-auto">
+                                <div class="uploadedPhoto">
+                                  <img id="uploadedPhotoImg" src="assets/img/registro/foto_perfil.png" class="img-fluid">
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-8 col-xl-8 mr-sm-auto">
+                                <ul id="listInfoStep5">
+                                  <li id="registerInfoCedula" class="fontDaxProBold color-blue">
+                                    <a>Cedula:
+                                      <span class="registerInfoValue color-black">V21461653</span>
+                                    </a>
+                                  </li>
+                                  <li id="registerInfoNombres" class="fontDaxProBold color-blue">
+                                    <a>Nombres:
+                                      <span class="registerInfoValue color-black">Saul Ramos</span>
+                                    </a>
+                                  </li>
+                                  <li id="registerInfoApellidos" class="fontDaxProBold color-blue">
+                                    <a>Apellidos:
+                                      <span class="registerInfoValue color-black">Ramos J</span>
+                                    </a>
+                                  </li>
+                                  <li id="registerInfoCedula" class="fontDaxProBold color-blue">
+                                    <a>Correo:
+                                      <span class="registerInfoValue color-black">saul@gmail.com</span>
+                                    </a>
+                                  </li>
+                                  <li id="registerInfoNombres" class="fontDaxProBold color-blue">
+                                    <a>Tlf:
+                                      <span class="registerInfoValue color-black">1234567</span>
+                                    </a>
+                                  </li>
+                                  <li id="registerInfoApellidos" class="fontDaxProBold color-blue">
+                                    <a>Servicio:
+                                      <span class="registerInfoValue color-black">Taxi personal</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                        </div>
+
+                        <div class="row">
+                          <div class="col col-12 col-lg-10 col-xl-10 mx-auto pt-2 pb-2">
+                            <h5 class="color-blue border-bottom-color d-inline-block">Coloca la contrase;a para tu cuenta</h5>
+                          </div>
+
+                          <div class="col-12 col-sm-6 col-lg-6 col-xl-5 ml-auto">
+                            <div class="input-group row mb-3 mx-auto">
+                              <label for="" class="color-blue w-100">Contrasena</label>
+                              <span class="input-group-addon py-0" id="sizing-addon2">Con</span>
+                              <input type="text" class="form-control form-control-sm" id="" placeholder="Contrasena">
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-6 col-xl-5 mr-auto">
+                            <div class="input-group row mb-3 mx-auto">
+                              <label for="" class="color-blue w-100">Repetir Contrasena</label>
+                              <span class="input-group-addon  py-0" id="sizing-addon2">Con</span>
+                              <input type="text" class="form-control form-control-sm" id="" placeholder="Repetir Contrasena">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end row 1 -->
+
+
+                        <!--Buttons-->
+                        <div class="row panelButtonsSteps">
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn color-blue float-left mt-2 mb-0 py-1 prev-step">Volver</button>
+                          </div>
+                          <div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+                            <button type="button" class="btn bg-yellow color-white float-right mt-2 mb-0 py-1 next-step">FInalizar</button>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- end step 5 -->
+
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                  <!-- end tab content-->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!--  -->
+  </section>
+
+  <div id="veloModal" class="closedVeloModal">
+    <span id="closeVeloButton" class="color-white">x</span>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12">
+          <h1 class="font-xxl title1 color-white title-border-bottom">Afiliado</h1>
+          <h2 class="color-white">Seleccione su tipo de usuario</h2>
+          <div class="row account-type-area">
+            <div class="col-6 col-sm-4 col-lg-4 ml-auto">
+              <a href="#" class="account-type-icon" data-id="cuenta-afiliado-natural" data-icon-img="assets/img/login/icon_persona_natural.png"
+                data-label="Cedula de identidad" data-select="Cedula" data-id-img="assets/img/registro/ingrese_cedula.png">
+                <img src="assets/img/icon_persona_natural_blanco.png" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-4 mr-auto">
+              <a href="#" class="account-type-icon" data-id="cuenta-afiliado-juridica" data-icon-img="assets/img/login/icon_persona_juridica.png"
+                data-label="Rif" data-select="Rif" data-id-img="assets/img/registro/ingrese_rif.png">
+                <img src="assets/img/icon_persona_juridica_blanco.png" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+          <ul class="listHelpLink fontDaxProBold">
+            <li>
+              <a href="#">Soporte</a>
+            </li>
+            <li>
+              <a href="#">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="assets/js/general.js"></script>
+  <script src="assets/js/views/register/register.js"></script>
+</body>
+
+</html>

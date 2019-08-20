@@ -1,0 +1,139 @@
+/*
+
+  ___ _   _               _           
+ | __| |_(_)__ _ _  _ ___| |_ __ _ ___
+ | _||  _| / _` | || / -_)  _/ _` (_-<
+ |___|\__|_\__, |\_,_\___|\__\__,_/__/
+              |_|                     
+
+*/
+
+a {
+    background-color: transparent;
+    border: 2px solid #f29220;
+    border-radius: 15px;
+    font-family: daxProBold;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    border-bottom: 0.2rem solid #f29220;
+    font-size: 2.8rem;
+}
+
+h2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(200, 200, 200);
+}
+
+label {
+    font-family: daxProBold;
+    font-size: 1.2rem;
+}
+
+/*
+
+   ___ _                 
+  / __| |__ _ ___ ___ ___
+ | (__| / _` (_-</ -_|_-<
+  \___|_\__,_/__/\___/__/
+                         
+
+*/
+
+.container-fluid {
+    max-width: 1500px;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: daxProRegular;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 1%;
+    resize: none;
+}
+
+.form-control:focus {
+    background-color: white;
+    border-color: #f29220;
+    color: black;
+}
+
+.svgWheel {
+    height: 50px;
+    width: 50px;
+}
+
+/*
+
+  __  __        _ _                          _        
+ |  \/  |___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+ | |\/| / -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+ |_|  |_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                             |_|                      
+
+*/
+
+/* Mobiles */
+@media (max-width: 370px) {
+    #veloModal {
+        overflow-y: scroll;
+    }
+    #veloModal .container-fluid>.row{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
+/* Smartphones to Tablets SM */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Tablets MD */
+@media (max-width: 991px) {
+    a {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    .form-control {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .svgWheel {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* Desktop LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .svgWheel {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Large Display XL */
+@media (min-width: 1200px) {}
+
+/* Special - Display HD */
+@media (min-width: 1900px) {
+
+}

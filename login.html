@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Iniciar Sesión</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/credirutas.css" />
+		<link rel="stylesheet" href="assets/css/views/login/login.css" />
+
+		<!-- Google Recaptcha -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+
+<body id="login">
+
+	<nav class="navbar navbar-dark navbar-expand-md bg-black-opacity w-100 py-md-2">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/img/logo.png" width="200" class="img-fluid">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item py-md-2">
+						<a href="index.html" class="nav-link pb-0 d-sm-inline-block fontDaxProBold">Home</a>
+					</li>
+					<li class="nav-item py-md-2">
+						<a href="register.html" class="nav-link pb-0 d-sm-inline-block fontDaxProBold">Registrate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="loginSection">
+		<div class="container containerPreLogin">
+			<div class="row align-items-center">
+				<div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mx-auto">
+					<div class="loginPanel cr-box-shadow-1 zoomOut">
+						<h1 class="bg-blue title1 font-xs">Inicio de Sesion</h1>
+						<p class="cr-P">Para ingresar primero debes seleccionar tu tipo de cuenta.</p>
+						<div class="container account-type-area">
+							<div class="row">
+								<div class="col-6 col-sm-6 col-lg-6 col-xl-6 ">
+									<a href="#" class="account-type-icon" data-id="cuenta-afiliados" data-icon-img="assets/img/login/icon_afiliados.png">
+										<img src="assets/img/login/icon_afiliados.png" class="img-fluid">
+									</a>
+								</div>
+								<div class="col-6 col-sm-6 col-lg-6 col-xl-6 ">
+									<a href="#" class="account-type-icon" data-id="cuenta-pasajeros" data-icon-img="assets/img/login/icon_pasajeros.png">
+										<img src="assets/img/login/icon_pasajeros.png" class="img-fluid">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="container containerLogin d-none">
+			<div class="row align-items-center">
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-10 mx-lg-auto col-xl-3 px-3 effRotateY">
+					<div class="row">
+						<div class="col-12 col-lg-12 col-xl-12">
+							<h2 class="color-yellow font-md text-center">Inicio de Sesion</h2>
+						</div>
+						<div class="col-12 col-lg-12 col-xl-12 text-center">
+							<h4 class="bg-blue d-sm-inline-block d-md-inline-block text-sm-center text-left p-1">Por favor ingresa los datos de tu cuenta</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-10 mx-lg-auto col-xl-8 px-xl-5">
+					<div class="loginPanel cr-box-shadow-1 pt-2 pb-0 effRotateY">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-0 loginRowTop">
+									<img src="assets/img/login/linea.png" class="img-fluid">
+									<h5 class="d-block">
+										<span class="bg-yellow color-white d-inline-block p-1 cr-w40 cr-mw-40">Estas iniciando sesion como:
+											<span>
+									</h5>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-5 col-md-5 col-lg-5 login-col-izq loginHide">
+									<img id="loginHowImg" width="160" src="assets/img/login/icon_pasajeros.png" class="mx-auto  d-block img-fluid">
+								</div>
+								<div class="col-12 col-sm-7 col-md-7 col-lg-7 loginFormColumn loginHide">
+
+									<form class="px-2 col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 ml-auto">
+										<div class="input-group input-user row mb-3 cr-w-auto">
+											<label for="loginUser" class="labelLoginUser color-blue w-100"></label>
+											<span class="input-group-addon addon-text py-0"></span>
+											<span class="input-group-addon p-0" id="basic-addon3">
+												<select id="selectCedula" class="custom-select cr-custom-select py-0 d-none" data-info="Cedula">
+													<option value="V" selected>V-</option>
+													<option value="E">E-</option>
+												</select>
+												<select id="selectRif" class="custom-select cr-custom-select py-0 d-none" data-info="Cedula">
+													<option value="J" selected>J-</option>
+													<option value="G">G-</option>
+												</select>
+											</span>
+											<input type="text" class="form-control form-control-sm" id="loginUser" aria-describedby="basic-addon3">
+										</div>
+										<div class="input-group row mb-3 cr-w-auto">
+											<label for="loginFormPassword" class="color-blue w-100">Contrasena</label>
+											<span class="input-group-addon bg-blue py-0" id="sizing-addon2">Con</span>
+											<input type="text" class="form-control form-control-sm" id="loginFormPassword" placeholder="Contrasena">
+										</div>
+
+										<div class="form-group row mb-0">
+											<div class="col-6 col-sm-5 col-lg-6 col-xl-6 pl-0">
+												<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+													<input type="checkbox" class="custom-control-input">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-description">Recordarme</span>
+												</label>
+											</div>
+											<div class="col-6 col-sm-7 col-lg-6 col-xl-6 pr-0 ">
+												<a href="#" id="forgotPassword" class="loginLink color-blue border-bottom-color float-right" data-id="forgot-password" data-user-label="">Olvide mi contrasena</a>
+											</div>
+										</div>
+										<div class="form-group row mb-0 pt-sm-2">
+											<div class="col-12 col-sm-10 col-lg-10 col-xl-10 mx-auto">
+												<div class="g-recaptcha" data-sitekey="6LduKzYUAAAAAEY7VIp10fXUGa_2FG0OdNJAhuAI"></div>
+											</div>
+										</div>
+
+										<div class="form-group row py-4 mb-0 pr-0">
+											<div class="col-12 col-sm-12 pr-0">
+												<button type="submit" class="btn bg-yellow color-white float-right py-1">Iniciar Sesion</button>
+											</div>
+										</div>
+
+									</form>
+								</div>
+								<!-- end login form column-->
+
+								<a href="#" id="loginLinkBack" class="color-blue border-bottom-color  ml-sm-4 ml-lg-4 ml-xl-4">Volver</a>
+
+								<div id="containerRecoveryPassword" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-none">
+									<p class="cr-P-3">Para recuperar su contrasena debe proporcionar su IDT, Rif o cedula, junto a su correo electronico, una vez proporcione
+										estos datos recibira un correo con los siguientes pasos.</p>
+									<form id="recoveryPasswordStep1" class="">
+										<div id="inputsRecoveryPassword" class="px-2 col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mx-auto">
+											<div class="form-group row">
+												<label for="loginFormUser" id="forgotPasswordUserLabel" class="color-blue "></label>
+												<input type="text" class="form-control form-control-sm" id="loginFormUser" placeholder="Example input">
+											</div>
+											<div class="form-group row">
+												<label for="loginFormPassword" class="color-blue">Correo</label>
+												<input type="email" class="form-control form-control-sm" id="loginFormPassword" placeholder="correo">
+											</div>
+										</div>
+
+										<div class="form-group row py-4 mb-0 pr-0">
+											<div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+												<a href="#" id="loginLinkBackPassword" class="color-blue border-bottom-color d-inline-block ml-sm-4 ml-lg-4 ml-xl-4">Volver</a>
+											</div>
+											<div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+												<button type="submit" class="btnContinuePassword btn bg-yellow color-white float-right py-1">Continuar</button>
+											</div>
+										</div>
+									</form>
+									<form id="recoveryPasswordStep2" class="d-none">
+										<div id="inputsRecoveryPassword" class="px-2 col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mx-auto">
+											<div class="form-group row">
+												<label class="color-blue">Contrasena</label>
+												<input type="text" class="form-control form-control-sm" placeholder="Contrasena">
+											</div>
+											<div class="form-group row">
+												<label for="loginFormPassword" class="color-blue">Reptetir Contrasena</label>
+												<input type="password" class="form-control form-control-sm" placeholder="Repetir contrasena">
+											</div>
+										</div>
+
+										<div class="form-group row py-4 mb-0 pr-0">
+											<div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+												<a href="#" id="loginLinkBackPassword" class="color-blue border-bottom-color d-inline-block ml-sm-4 ml-lg-4 ml-xl-4">Volver</a>
+											</div>
+											<div class="col-6 col-sm-6 col-lg-6 col-xl-6">
+												<button type="submit" class="btnContinuePassword btn bg-yellow color-white float-right py-1">Continuar</button>
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+							<!-- end row -->
+						</div>
+						<!-- end container -->
+					</div>
+					<!-- end loginPanel-->
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+
+	</section>
+	<div id="veloModal" class="closedVeloModal">
+		<span id="closeVeloButton" class="color-white">x</span>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-lg-12">
+					<h1 class="font-xxl title1 color-white title-border-bottom">Afiliado</h1>
+					<h2 class="color-white">Seleccione su tipo de usuario</h2>
+					<div class="row account-type-area">
+						<div class="col-6 col-sm-4 col-lg-4 col-xl-4 ml-auto">
+							<a href="#" class="account-type-icon" data-id="cuenta-afiliado-natural" data-icon-img="assets/img/login/icon_persona_natural.png">
+								<img src="assets/img/login/icon_persona_natural_blanco.png" class="img-fluid">
+							</a>
+						</div>
+						<div class="col-6 col-sm-4 col-lg-4 col-xl-4 mr-auto">
+							<a href="#" class="account-type-icon" data-id="cuenta-afiliado-juridica" data-icon-img="assets/img/login/icon_persona_juridica.png">
+								<img src="assets/img/login/icon_persona_juridica_blanco.png" class="img-fluid">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+					<ul class="listHelpLink fontDaxProBold">
+						<li>
+							<a href="#">Soporte</a>
+						</li>
+						<li>
+							<a href="#">Ayuda</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="assets/js/general.js"></script>
+	<script src="assets/js/views/login/login.js"></script>
+</body>
+
+</html>

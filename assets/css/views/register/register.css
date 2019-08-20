@@ -1,0 +1,421 @@
+/*
+
+  ___ _   _               _           
+ | __| |_(_)__ _ _  _ ___| |_ __ _ ___
+ | _||  _| / _` | || / -_)  _/ _` (_-<
+ |___|\__|_\__, |\_,_\___|\__\__,_/__/
+              |_|                     
+
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+/*
+
+   ___ _                 
+  / __| |__ _ ___ ___ ___
+ | (__| / _` (_-</ -_|_-<
+  \___|_\__,_/__/\___/__/
+                         
+
+*/
+
+.afiliados-type li {
+    list-style: none;
+}
+
+.bg_type_account {
+    position: absolute;
+    top: -2rem;
+}
+
+.changeSelection {
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+}
+
+.changeService {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+.disableNextLi {
+    pointer-events: none;
+}
+
+.iconTypeService {
+    position: relative;
+    display: block;
+    padding: 8px 8px 8px 24px;
+    border-radius: 5px;
+    max-width: 75%;
+    margin: 10px auto;
+    color: #fff !important;
+}
+
+.icon-category-service,
+.icon-service {
+    display: block;
+    text-align: center;
+    outline: 0;
+}
+
+.imgTypeService {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.listImgButtons {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.listImgButtons li {
+    display: inline-block;
+}
+
+.nav-link .cls-1 {
+    fill: #f29220;
+    stroke: #f29220;
+}
+
+.nav-link.active .cls-1 {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #21409a;
+}
+
+.next-step {
+    margin-right: 0;
+}
+
+.prev-step {
+    background: transparent;
+    border: 1px solid #f29220;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.registerInfoStep5 {
+    border-bottom: 1px solid;
+}
+
+.registerInfo p {
+    margin-bottom: 0;
+}
+
+.row.panelButtonsSteps {
+    position: absolute;
+    width: 100%;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.stepsArea .nav-item {
+    width: 20%;
+}
+
+.selectAccountDivider {
+    border-right: 2px solid #777;
+}
+
+.stepsArea li a.nav-link {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #f29220;
+    padding: 0 1.5rem;
+    border-style: none;
+    border-radius: 10px;
+    border-color: #f29220;
+    border: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    width: 60px;
+    height: 55px;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.stepsArea li a.nav-link:hover {
+    border-color:  #f29220;
+}
+
+.stepsArea li a:after {
+    content: " ";
+    position: absolute;
+    left: 35%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: -14px;
+    border: 10px solid transparent;
+    border-bottom-color: #21409a;
+    transition: 0.1s ease-in-out;
+}
+
+.stepsArea li a.nav-link.active {
+    color: #fff;
+    background: #21409a;
+    border: none;
+}
+
+.stepsArea li a.active::after {
+    content: " ";
+    position: absolute;
+    left: 35%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: -14px;
+    border: 10px solid transparent;
+    border-bottom-color: #21409a;
+    transition: 0.1s ease-in-out;
+}
+
+.serviceNotActive .serviceImgOp {
+    opacity: 0.5;
+}
+
+.uploadedPhoto {
+    display: block;
+    text-align: center;
+}
+
+/*
+
+  ___ ___  _ ___ 
+ |_ _|   \( ) __|
+  | || |) |/\__ \
+ |___|___/  |___/
+                 
+
+*/
+
+#listInfoStep5 {
+    list-style: none;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#register {
+    background: url('./img/bg_register.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#uploadedPhotoImg {
+    max-width: 120px;
+}
+
+/*
+
+  __  __        _ _                          _        
+ |  \/  |___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+ | |\/| / -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+ |_|  |_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                             |_|                      
+
+*/
+
+/*special cases*/
+@media (max-width: 360px) {
+    .account-type-icon img {
+        max-width: 135px;
+        padding-top: 0;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .bg_type_account {
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        right: 0;
+    }
+    .input-group-addon {
+        display: none;
+    }
+    .account-type-icon img {
+        max-width: 150px;
+        padding-top: 1.25rem;
+    }
+    #formRegister .tab-pane {
+        min-height: 720px;
+    }
+}
+
+/* Smartphones to Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .account-type-icon img {
+        max-width: 145px;
+        padding-top: 1.5rem;
+    }
+    .account-type-left img {
+        padding-right: 8px;
+    }
+    .account-type-right img {
+        padding-left: 8px;
+    }
+    .bg_type_account {
+        left: .5rem;
+    }
+    .font-sm {
+        font-size: 12px;
+    }
+    .font-xl {
+        font-size: 1.5rem;
+    }
+    .input-group {
+        width: auto;
+    }
+    #formRegister .tab-pane {
+        min-height: 760px;
+    }
+    #selectService {
+        margin-top: 20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 959px) { 
+    .account-type-icon img {
+        max-width: 150px;
+        padding-top: 1rem;
+    }
+    .account-type-left img {
+        padding-right: 8px;
+    }
+    .account-type-right img {
+        padding-left: 8px;
+    }
+    .bg_type_account {
+        left: .5rem;
+    }
+    .input-group-addon {
+        display: none;
+    }
+    .input-group {
+        width: auto;
+    }
+    #formRegister .tab-pane {
+        min-height: 700px;   
+    }
+    #selectService {
+     margin-top: 20px;
+    }
+}
+
+/* Desktop */
+/*special cases*/
+@media (min-width: 960px) and (max-width: 1023px) {
+    .account-type-icon img {
+        max-width: 150px;
+    }
+    .account-type-left img {
+        padding-right: 8px;
+    }
+    .account-type-right img {
+        padding-left: 8px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .account-type-icon img {
+        padding-top: 1rem;
+    }
+    .account-type-left img {
+        padding-right: 5px;
+    }
+    .account-type-right img {
+        padding-left: 5px;
+    }
+    .bg_type_account {
+        left: .5rem;
+    }
+    .icon-service img {
+        max-width: 100px;
+    }
+    .selectForm {
+        width: 92%;
+    }
+    #formRegister .tab-pane {
+        min-height: 700px;
+        max-height: 700px;
+    }
+    #selectService {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+    .account-type-icon img {
+        max-width: 150px;
+    }
+    .account-type-left img {
+        padding-right: 8px;
+    }
+    .account-type-right img {
+        padding-left: 8px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .locationSelect-lg {
+        width: 90%;
+    }
+    .selectForm {
+        width: 95%;
+    }
+}
+/* Large Display */
+@media (min-width: 1200px) { 
+    #formRegister .tab-pane {
+        min-height: 370px;
+        max-height: 370px;
+    }
+
+ }
+
+ @media (min-width:  1200px) and (max-width: 1366px) {
+    .icon-service img {
+        max-width: 100px;
+    }
+    #selectService {
+        margin-top: 10px;
+    }
+ }
+
+@media (min-width:  1367px) {
+    .icon-service img {
+        max-width: 104px;
+    }
+    #selectService {
+        margin-top: 10px;
+    }
+}
+

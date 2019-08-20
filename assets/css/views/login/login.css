@@ -1,0 +1,186 @@
+/*
+
+   ___ _                 
+  / __| |__ _ ___ ___ ___
+ | (__| / _` (_-</ -_|_-<
+  \___|_\__,_/__/\___/__/
+                         
+
+*/
+
+.account-type-area {
+    padding: 40px;
+}
+
+.containerPreLogin {
+    max-width: 970px;
+}
+
+.loginSection {
+    padding-top: 1rem;
+}
+
+.loginPanel {
+    position: relative;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.loginPanel .cr-P {
+    margin: 0 10px;
+    border-bottom: 1px solid #21409a;
+    font-weight: bold;
+}
+
+.loginLink:hover {
+    text-decoration: none;
+}
+
+/*
+
+  ___ ___  _ ___ 
+ |_ _|   \( ) __|
+  | || |) |/\__ \
+ |___|___/  |___/
+                 
+
+*/
+
+#login {
+    background: url('./img/login_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loginLinkBack {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+#loginLinkBackPassword {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+}
+
+#loginLinkBack:hover,
+#loginLinkBackPassword {
+    text-decoration: none;
+}
+
+/*
+
+  __  __        _ _                          _        
+ |  \/  |___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+ | |\/| / -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+ |_|  |_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                             |_|                      
+
+*/
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .g-recaptcha {
+        -webkit-transform: scale(0.77);
+        -moz-transform: scale(0.77);
+        -ms-transform: scale(0.77);
+        -o-transform: scale(0.77);
+        transform: scale(0.77);
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+    }
+    .loginSection {
+        margin-bottom: 40px;
+    }
+    #forgotPassword {
+        font-size: 12px;
+    }
+}
+
+/* Smartphones to Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .g-recaptcha {
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        transform: scale(0.6);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    .loginSection {
+        margin-bottom: 40px;
+    }
+    #forgotPassword {
+        font-size: 12px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 959px) {
+    .footer {
+        margin-top: 3rem;
+        position: relative;
+    }
+    .g-recaptcha {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-transform-origin: 15% 0;
+        -moz-transform-origin: 15% 0;
+        -ms-transform-origin: 15% 0;
+        -o-transform-origin: 15% 0;
+        transform-origin: 15% 0;
+    }
+    #forgotPassword {
+        font-size: 14px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 960px) and (max-width: 1199px) { 
+    .g-recaptcha {
+        -webkit-transform: scale(0.77);
+        -moz-transform: scale(0.77);
+        -ms-transform: scale(0.77);
+        -o-transform: scale(0.77);
+        transform: scale(0.77);
+        -webkit-transform-origin: 15% 0;
+        -moz-transform-origin: 15% 0;
+        -ms-transform-origin: 15% 0;
+        -o-transform-origin: 15% 0;
+        transform-origin: 15% 0;
+    }
+    .loginSection {
+        padding-bottom: 3rem;
+    }
+    #forgotPassword {
+        font-size: 14px;
+    }
+}
+
+/* Large Display */
+@media (min-width: 1200px) { 
+    .g-recaptcha {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.70);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+}

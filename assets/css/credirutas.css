@@ -1,0 +1,485 @@
+@font-face {
+    font-family: daxProRegular;
+    src: url('fonts/DaxPro-Regular.otf');
+}
+
+@font-face {
+    font-family: daxProBold;
+    src: url('fonts/DaxPro-Bold.otf');
+}
+
+/*
+
+  ___ _   _               _           
+ | __| |_(_)__ _ _  _ ___| |_ __ _ ___
+ | _||  _| / _` | || / -_)  _/ _` (_-<
+ |___|\__|_\__, |\_,_\___|\__\__,_/__/
+              |_|                     
+
+*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /*padding: 0;*/
+    overflow-x: hidden;
+    font-family: daxProRegular;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: daxProBold;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+section {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/*
+
+   ___ _                 
+  / __| |__ _ ___ ___ ___
+ | (__| / _` (_-</ -_|_-<
+  \___|_\__,_/__/\___/__/
+                         
+
+*/
+
+.account-type-icon {
+    display: block;
+    text-align: center;
+    outline: 0;
+}
+
+.account-type-icon img {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+}
+
+.account-type-icon:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bg-black-opacity {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-blue {
+    background-color: #21409a;
+    color: #fff;
+}
+
+.bg-blue.title1 {
+    display: inline-block;
+    margin-left: -3px;
+}
+
+.bg-yellow {
+    background-color: #f29220;
+}
+
+.border-bottom-color {
+    border-bottom: 1px solid #f29220;
+}
+
+.border-bottom-color-777 {
+    border-bottom: 1px solid #777;
+}
+
+.closedVeloModal {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-yellow {
+    color: #f29220;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-blue {
+    color: #21409a;
+}
+
+.cr-box-shadow-1 {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.cr-custom-select {
+    height: calc(1.75rem + 2px);
+    border: none;
+}
+
+.cr-margin-4 {
+    margin: 4% auto;
+}
+
+.cr-margin-3 {
+    margin: 3% auto;
+}
+
+.cr-margin-2 {
+    margin: 2% auto;
+}
+
+.cr-w-auto {
+    width: auto !important;
+}
+
+.cr-P-3 {
+    text-align: justify;
+}
+
+.crP-3 {
+    font-size: 0.9rem;
+}
+
+.cr-no-outline {
+    outline: 0;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+    background-color: #21409a;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.fontDaxProRegular {
+    font-family: daxProRegular;
+}
+
+.fontDaxProBold {
+    font-family: daxProBold;
+}
+
+.font-md {
+    font-size: 36px;
+}
+
+.font-xxl {
+    font-size: 70px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    min-height: 40px;
+    bottom: 0;
+}
+
+.listHelpLink {
+    float: right;
+    margin: 8px 0;
+}
+
+.listHelpLink li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.listHelpLink li a {
+    color: #fff;
+    border-bottom: 1px solid #f29220;
+}
+
+.listHelpLink li a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    flex-shrink: 0;
+    max-height: 100px;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-toggler:hover {
+    cursor: pointer;
+}
+
+.navbar-nav li {
+    margin-right: 10px;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    border-bottom: 0.2rem solid #f29220;
+    font-size: 1.2rem;
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.openedVeloModal {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.rotateYNext {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transform: rotateY(-360deg);
+    transition: .5s;
+}
+
+.rotateYPrev {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transform: rotateY(-360deg);
+    transition: .5s;
+}
+
+.selectForm {
+    width: 82%;
+}
+
+.title1 {
+    padding: 5px 25px 5px 10px;
+}
+
+.title2 {
+    padding: 5px 25px 5px 10px;
+}
+
+.title-border-bottom:after {
+    width: 45%;
+    content: "";
+    background: #f29220;
+    display: block;
+    height: 2px;
+}
+
+.zoomOut {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.zoomIn {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transform: scale(1);
+    transition: .5s;
+}
+
+/*
+
+  ___ ___  _ ___ 
+ |_ _|   \( ) __|
+  | || |) |/\__ \
+ |___|___/  |___/
+                 
+
+*/
+/* #closeVeloButton {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 100%;
+    border: 2px solid;
+} */
+
+#closeVeloButton {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.3rem;
+    border-radius: 100%;
+    border: 2px solid;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#veloModal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    overflow-y: hidden;
+}
+
+#veloModal .container {
+    max-width: 970px;
+    margin-top: 5rem;
+}
+
+/*
+
+  __  __        _ _                          _        
+ |  \/  |___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+ | |\/| / -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+ |_|  |_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                             |_|                      
+
+*/
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .cr-P-3 {
+        font-size: 0.8rem;
+    }
+    .cr-selectForm-lg {
+        width: 84%;
+    }
+    .custom-select {
+        width: 100%;
+    }
+    .font-xs {
+        font-size: 1.5rem;
+    }
+    .font-md {
+        font-size: 36px;
+    }
+    .navbar-nav li {
+        text-align: center;
+    }
+    .navbar-nav li a {
+        display: inline-block;
+    }
+}
+
+/* Smartphones to Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .custom-select {
+        width: 100%;
+    }
+    .footer {
+        bottom: -3rem;
+    }
+    .input-group-addon {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 959px) {
+    .custom-select {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 960px) and (max-width: 1199px) {
+    .custom-select {
+        width: 100%;
+    }
+}
+
+
+/* Large Display */
+@media (min-width: 1200px) {
+    html,
+    body {
+        overflow-y: hidden;
+    }
+    .cr-w-40 {
+        width: 40% !important;
+    }
+    .cr-mw-40 {
+        max-width: 40% !important;
+    }
+    .cr-P-3 {
+        font-size: 0.9rem;
+    }
+    .cr-selectForm-lg {
+        width: 90%;
+    }
+    .cr-selectForm-xl {
+        width: 100%;
+    }
+    .font-xl {
+        font-size: 50px;
+    }
+    .font-lg {
+        font-size: 42px;
+    }
+    .font-md {
+        font-size: 36px;
+    }
+}

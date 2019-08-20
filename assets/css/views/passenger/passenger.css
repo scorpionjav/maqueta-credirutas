@@ -1,0 +1,577 @@
+/*=============== Web ===============*/
+
+/*----------- Labels -----------*/
+
+body {
+    background-color: rgba(200, 200, 200, 0.75);
+}
+
+a,
+a:hover,
+a:focus {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3,
+h4 {
+    font-size: 1.2rem;
+}
+
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+/*-----------------------------TODO: Podria moverse al 'style.css' -----------------------------*/
+.bg-orange {
+    background-color: #f15a22;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.color-orange {
+    color: #f15a22;
+}
+
+.dataTables_wrapper .dataTables_filter label {
+    color: transparent;
+    display: block;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url('./img/search.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: daxProBold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: -1% !important;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    color: transparent;
+}
+
+table.dataTable th,
+table.dataTable td {
+    padding: 0 !important;
+    border: none;
+    vertical-align: middle !important;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+table.dataTable thead th.tableTh1 {
+    border-bottom: 0.5rem solid #21409a !important;
+}
+
+table.dataTable thead th.tableTh2 {
+    border-bottom: 0.5rem solid rgb(0, 153, 255) !important;
+}
+
+table.dataTable thead th.tableTh3 {
+    border-bottom: 0.5rem solid #f15a22 !important;
+}
+
+table.dataTable thead th.tableTh4 {
+    border-bottom: 0.5rem solid red !important;
+}
+
+table.dataTable tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(0, 0, 0, .20);
+    color: white;
+}
+
+table.dataTable tbody tr:nth-of-type(2n) {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #f29220;
+}
+
+.dataTables_wrapper .dataTables_paginate ul.pagination .page-item .page-link {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.dataTables_wrapper .dataTables_paginate ul.pagination .page-item.active>.page-link {
+    border: none;
+    background: transparent;
+    color: #f15a22;
+}
+/*-----------------------------TODO: HASTA AQUI - Podria moverse al 'style.css' -----------------------------*/
+
+/*----------- Class -----------*/
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.divNavPhoto {
+    position: relative;
+    width: 6.5rem;
+    height: 6.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.divProfilePhoto {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.divDriverPhoto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+.divBlogPhoto {
+    position: relative;
+    width: auto;
+    height: 12.5rem;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    height: 10%;
+}
+.photo {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.rowShadow {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    overflow: hidden;
+}
+
+.svgWheel {
+    max-width: 25px;
+}
+
+/*----------- Id's -----------*/
+
+#carouselBlog {
+    z-index: 1;
+}
+
+#carouselBlog .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#carouselBlog .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+#carouselDriver h4 {
+    font-family: daxProRegular;
+}
+
+#carouselDriver li.active {
+    background-color: gray;
+}
+
+#carouselDriver li {
+    background-color: rgba(0, 0, 0, .20);
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+#carouselDriver .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#carouselDriver .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+#content {
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#headerCrediBlog {
+    z-index: 2;
+    padding-right: 20%;
+}
+
+#headerCrediBlog h3,
+#headerCrediBlog h5 {
+    font-size: 1.2rem !important;
+}
+
+#headerRowFavorite {
+    height: 14%;
+}
+
+#headerRowReport {
+    height: 11%;
+}
+
+#linkBlog {
+    position: absolute;
+    display: block;
+    bottom: 13%;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    border-bottom: 2px solid #f29220;
+    z-index: 4;
+}
+
+#passengerDesktop .row {
+    max-width: 1500px;
+}
+
+#rowCrediBlog {
+    height: 26%;
+}
+
+#rowCrediBlog div+div {
+    overflow: hidden;
+}
+
+#rowFavorite {
+    height: 36%;
+}
+
+#rowInfoPassenger {
+    border: 4px solid #f15a22;
+    height: 60%;
+}
+
+#rowReport {
+    height: 50%;
+}
+
+#sideBar {
+    width: 15%;
+}
+
+#sideBar.active {
+    width: 8%;
+    text-align: center;
+}
+
+#sideBar.active #sideBarHeader {
+    display: none;
+}
+
+#sideBar ul a {
+    text-align: left;
+    padding: 3%;
+    display: block;
+}
+
+#sideBar ul a:hover {
+    border-left: 0.3rem solid #f15a22;
+}
+
+#sideBar.active ul a {
+    padding: 10%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#sideBar #reportSubMenu {
+    color: white;
+    list-style: disc;
+    padding-left: 3rem;
+    background: #363636;
+}
+
+#sideBar.active #reportSubMenu {
+    list-style: none;
+    padding-left: 0;
+}
+
+#sideBar #reportSubMenu a {
+    border-left: 2px solid white;
+    font-size: 0.9em !important;
+    margin-left: -10%;
+    padding-left: 20%;
+}
+#sideBar.active #reportSubMenu a {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sideBar.active #reportSubMenu a {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 1em !important;
+}
+
+#sideBar #reportSubMenu a:hover {
+    border-left-color: #f15a22 !important;
+}
+
+#sideBar ul li.active>#reportSubMenu,
+a[aria-expanded="true"] {
+    border-left: 0.3rem solid #f15a22;
+}
+
+#sideBar #btnLogout {
+    /* bottom: 0;
+    position: fixed; */
+    right: auto;
+    left: 3%;
+}
+
+#sideBar.active #btnLogout {
+    bottom: 0;
+    left: 1%;
+    position: fixed;
+    width: 5%;
+}
+
+#sideBar #btnLogout h6 {
+    border-bottom: 1px solid white;
+}
+
+#sideBar.active #btnLogout h6,
+#sideBar.active #btnLogout img {
+    font-size: 0.8rem;
+    width: 60%;
+    margin: auto;
+}
+
+#wrapper {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/*=============== Media Queries ===============*/
+
+/* Mobiles */
+@media (max-width: 400px) {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        height: 15px;
+        width: 15px;
+    }
+    .divDriverPhoto {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    .svgWheel {
+        height: 13px !important;
+        width: 13px !important;
+    }
+    #linkBlog {
+        bottom: 5%;
+    }
+    #sideBar.active {
+        width: 20%;
+        position: fixed;
+        height: 100%;
+        z-index: 5;
+    }
+    #sideBar.active #btnLogout {
+        width: 10% !important;
+        left: 5% !important;
+    }
+    #wrapper {
+        overflow: visible;
+    }
+}
+
+/* Smartphones to Tablets SM */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Tablets MD */
+@media (max-width: 991px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    h2,
+    h5,
+    h6 {
+        font-size: 0.9rem !important;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    table.dataTable th, 
+    table.dataTable td {
+        height: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .dataTables_wrapper .dataTables_filter input {
+        font-size: 1.5rem;
+    }
+    .divBlogPhoto {
+        height: 9.7rem;
+    }
+    .divDriverPhoto {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .divNavPhoto {
+        width: 4rem;
+        height: 4rem;
+    }
+    .divProfilePhoto {
+        width: 7rem;
+        height: 7rem;
+    }
+    .svgWheel {
+        height: 15px;
+        width: 15px;
+    }
+    #headerCrediBlog h3,
+    #headerCrediBlog h5 {
+        font-size: 1rem !important;
+    }
+    #sideBar ul a {
+        font-size: 0.8em;
+    }
+    #sideBar .components img {
+        width: 35% !important;
+    }
+    #sideBar.active ul a {
+        padding: 4%;
+        font-size: 0.8rem;
+    }
+     #sideBar #reportSubMenu {
+        padding-left: 1.7rem !important;
+    }
+    #sideBar #reportSubMenu a {
+        font-size: 0.8rem !important;
+        padding-left: 10px !important;
+    }
+    #sideBar.active #reportSubMenu a {
+        font-size: 0.9em !important;
+        padding-left: 0 !important;
+    }
+    #sideBar #btnLogout {
+        left: 1.5%;
+    }
+    #sideBar #btnLogout img {
+        width: 50% !important;
+    }
+    #sideBar.active #btnLogout img,
+    #sideBar.active #btnLogout h6 {
+        width: 100% !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Desktop LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large Display XL */
+@media (min-width: 1200px) { 
+
+}
+
+/* Special - Display HD */
+@media (min-width: 1900px) {
+    h1, 
+    h2 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    h5, 
+    h6 {
+        font-size: 1.5rem;
+    }
+    table.dataTable th,
+    table.dataTable td {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    .divBlogPhoto {
+        height: 19rem;
+    }
+    .divDriverPhoto {
+        width: 10rem;
+        height: 10rem;
+    }
+    .divNavPhoto {
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .divProfilePhoto {
+        width: 17rem;
+        height: 17rem;
+    }
+    .dataTables_wrapper .page-link {
+        font-size: 2rem;
+    }
+    #passengerDesktop a {
+        font-size: 1.5em !important;
+    }
+    #headerCrediBlog h3,
+    #headerCrediBlog h5 {
+        font-size: 2rem !important;
+    }
+    #headerRowFavorite {
+        height: 12%;
+        padding-top: 1%;
+    }
+    #headerRowReport {
+        height: 10%;
+        padding-top: 1%;
+    }
+    #sideBar ul a {
+        font-size: 1.5em;
+    }
+    #sideBar.active ul a {
+        font-size: 1.2rem;
+    }
+    #sideBar #reportSubMenu a {
+        font-size: 1.1em !important;
+    }
+    #sideBar.active #btnLogout h6 { 
+        font-size: 1.1rem;
+    }  
+}

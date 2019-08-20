@@ -1,0 +1,315 @@
+/*
+
+  ___ _   _               _           
+ | __| |_(_)__ _ _  _ ___| |_ __ _ ___
+ | _||  _| / _` | || / -_)  _/ _` (_-<
+ |___|\__|_\__, |\_,_\___|\__\__,_/__/
+              |_|                     
+
+*/
+
+body {
+    background: url(./img/home_bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, 
+body {
+	overflow-x: hidden !important;
+}
+
+/*
+
+   ___ _                 
+  / __| |__ _ ___ ___ ___
+ | (__| / _` (_-</ -_|_-<
+  \___|_\__,_/__/\___/__/
+                         
+
+*/
+
+.full-height {
+	min-height: 100%;
+}
+
+.infoFlow {
+    top: 0; 
+    transition: 1.25s;
+}
+
+.listTitle {
+    width: 30%;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 15%;
+}
+
+.socialMediaLink {
+    width: 50px;
+    height: 50px;
+    background: #f19120;
+    margin: 10px auto;
+    border-radius: 25%;
+    line-height: 50px;
+}
+
+.socialMediaLink a {
+    font-size: 40px;
+    color: #fff;
+}
+
+.socialMediaList {
+    top: 10rem;
+    right: 2rem;
+    z-index: 9999;
+}
+
+/*
+
+  ___ ___  _ ___ 
+ |_ _|   \( ) __|
+  | || |) |/\__ \
+ |___|___/  |___/
+                 
+
+*/
+
+#affiliate {
+    background: url('./img/panel_afiliado.png');
+    background-color: #224099;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+#benefits h1 {
+    font-size: 2.8rem;
+}
+
+#carouselHome .carousel-inner {
+    top: 0;
+    height: auto;
+}
+
+#carouselHome .carousel-control-prev,
+#carouselHome .carousel-control-next {
+    width: 3.5%;
+}
+
+#carouselHome .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+#carouselHome .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#carouselHome .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+#description .container-fluid {
+    max-width: 1300px;
+}
+
+#descriptionText {
+    background: url(./img/linea2.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#descriptionText p {
+    font-size: 1.5rem;
+    margin-top: 20%;
+}
+
+#infoAffiliate {
+    background: url('./img/info_afiliado.png');
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -100%;
+}
+
+#infoPassenger {
+    background: url('./img/info_pasajero.png');
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -100%;
+}
+
+#listBenefits p {
+    padding-left: 7%;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+#options {
+    height: 40%;
+}
+
+#options a img {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+}
+
+#options a:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#passenger {
+    background: url('./img/panel_pasajero.png');
+    background-color: #f19120;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+#slider {
+    height: 60%;
+}
+
+/*
+
+  __  __        _ _                          _        
+ |  \/  |___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+ | |\/| / -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+ |_|  |_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                             |_|                      
+
+*/
+
+/* Mobiles */
+@media (max-width: 370px) {
+    .listTitle {
+        font-size: 1.1rem !important;
+    }
+    .navbar {
+        position: relative;
+        max-height: 100%;
+        background-color: black;
+    }
+    .navbar-brand {
+        padding-top: 0;
+    }
+    .navbar-toggler {
+        border: none;
+        outline: 0;
+    }
+    .navbar-nav {
+        display: block;
+    }
+    .navbar-nav li {
+        text-align: center;
+        float: left;
+        width: 50%;
+        margin-right: 0;
+    }
+    .navbar .navbar-brand {
+        width: 75% !important;
+        padding: 0;
+    }
+    #benefits h1 {
+        font-size: 1.5rem !important;
+    }
+    #description,
+    #description .fp-tableCell,
+    #description .container-fluid{
+        height: 420px !important;
+    }
+    #description .col-7 {
+        height: 10% !important;
+        padding-top: 20%;
+    }
+    #descriptionText {
+        background-size: contain;
+    }
+    #descriptionText p {
+        margin-top: 6rem !important;
+    }
+    #firstSection {
+        height: auto !important;
+    }
+}
+
+/* Smartphones to Tablets SM */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Tablets MD */
+@media (max-width: 991px) { 
+    .listTitle {
+        font-size: 1.2rem;
+    }
+    .navbar {
+        height: 10%;
+    }
+    .navbar .navbar-brand img {
+        width: 50%
+    }
+    .navbar li a {
+        font-size: 1rem;
+    }
+    .socialMediaLink {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: -30%;
+        line-height: 1.5rem;
+    }
+    #benefits h1 {
+        font-size: 2rem;
+    }
+    #benefits p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    #descriptionText p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar li a {
+        font-size: 1.3rem;
+    }
+    #benefits h1 {
+        font-size: 2.3rem;
+    }
+    #benefits p {
+        font-size: 1.3rem;
+    }
+    #slider {
+        height: 50%;
+    }
+}
+
+/* Large Display XL */
+@media (min-width: 1200px) {}
+
+/* Special - Display HD */
+@media (min-width: 1900px) { 
+    #options {
+        height: auto;
+    }
+    #slider {
+        height: 70%;
+    }
+
+}

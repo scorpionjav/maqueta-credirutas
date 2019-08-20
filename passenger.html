@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Pasajero</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/credirutas.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/views/passenger/passenger.css" type="text/css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/views/dataTables.bootstrap4.css"/>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div id="veloModal" class="closedVeloModal">
+        <span id="closeVeloButton" class="color-white">x</span>
+        <div class="container-fluid px-0">
+            <div class="row mx-auto justify-content-center mt-5">
+                <div class="col-12 col-md-10 col-lg-8 px-0 table-responsive">
+                    <table id="modalTable" class="table table-striped color-white dt-responsive nowrap text-center daxProRegular my-auto" width="100%" cellspacing="0">
+                        <thead class="thead-dark daxProRegular">
+                            <tr>
+                                <th class="tableTh1 py-1">Conductor</th>
+                                <th class="tableTh2 py-1">Servicio</th>
+                                <th class="tableTh3 py-1">Fecha</th>
+                                <th class="tableTh4 py-1">Costo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <nav id="sideBar" class="active bg-black color-white">
+            <div class="pt-2 pt-lg-3">
+                <a id="btnCollapse" class="" href="#">
+                    <img src="assets/img/passenger/Menu.png" class="img-fluid">
+                </a>
+            </div>
+            <div id="sideBarHeader" class="text-center pt-4 px-3 mx-auto mb-lg-5">
+                <div class="divNavPhoto mx-auto">
+                    <img id="" src="assets/img/passenger/icono foto.png" class="photo">
+                </div>
+                <h2>Nombre y apellido</h2>
+            </div>
+            <ul class="list-unstyled components pt-lg-3">
+                <li>
+                    <a href="#">
+                        <img src="assets/img/passenger/escritorio.png" class="img-fluid mx-1"> Escritorio
+                    </a>
+                    <a href="#reportSubMenu" data-toggle="collapse" aria-expanded="false">
+                        <img src="assets/img/passenger/reportes.png" class="img-fluid mx-1 mx-md-1 mx-lg-2 py-1"> Reportes
+                    </a>
+                    <ul id="reportSubMenu" class="collapse">
+                        <li>
+                            <a class="" href="#">Opción 1</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">Opción 2</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">Opción 3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="btnLogout" class="text-center mb-2 fixed-bottom">
+                <a href="#">
+                    <img src="assets/img/passenger/logout.png" class="img-fluid">
+                    <h6 class="color-orange">Cerrar sesión</h6>
+                </a>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div id="content" class="w-100">
+            <!-- NavBar -->
+            <nav class="navbar navbar-dark navbar-dark bg-black navbar-expand p-0">
+                <a id="btnCollapse2" class="pt-1 d-md-none" href="#">
+                    <img src="assets/img/passenger/Menu.png" class="">
+                </a>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/CrediRutas.png" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="">
+                        <ul class="navbar-nav ml-auto mr-lg-5 d-flex align-items-center">
+                            <li class="nav-item py-md-2">
+                                <a href="#" class="nav-link pt-1 pb-0 py-md-2 px-0 border-0">
+                                    <img src="assets/img/passenger/notificacion standar.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="nav-item py-md-2 ml-xl-3 mr-xl-5">
+                                <a href="#" class="nav-link pb-0 py-md-3 px-0 border-0">
+                                    <img src="assets/img/passenger/inbox standar.png" class="img-fluid">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Passenger Desktop -->
+            <div id="passengerDesktop" class="w-100 h-100 py-2 py-lg-3">
+                <div class="row h-100 mx-auto justify-content-center align-items-center">
+                    <div class="col-11 col-md-8 col-lg-7 col-xl-6 h-100">
+                        <div id="rowReport" class="row rowShadow ml-md-1 mb-3 mb-lg-4">
+                            <h1 id="headerRowReport" class="bg-orange color-white daxProBold w-100 pl-4 pb-2">Reporte</h1>
+                            <div class="col d-flex justify-content-end mt-lg-1 pr-4 position-absolute">
+                                <a id="seeTable" class="color-white" href="#">Ver más</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="desktopTable" class="table table-striped dt-responsive nowrap text-center daxProRegular my-auto" width="100%" cellspacing="0">
+                                    <thead class="thead-dark daxProRegular">
+                                        <tr>
+                                            <th class="tableTh1 py-1">Conductor</th>
+                                            <th class="tableTh2 py-1">Servicio</th>
+                                            <th class="tableTh3 py-1">Fecha</th>
+                                            <th class="tableTh4 py-1">Costo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="rowFavorite" class="row rowShadow ml-md-1">
+                            <h1 id="headerRowFavorite" class="bg-orange color-white daxProBold d-line-block w-100 pl-4 pb-2">Mis favoritos</h1>
+                            <div class="col d-flex justify-content-end mt-lg-1 pr-4 position-absolute">
+                                <a id="seeFavorites" class="color-white" href="#">Ver más</a>
+                            </div>
+                            <div class="w-100">
+                                <div id="carouselDriver" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row text-center mx-auto">
+                                                <div class="col-4 pr-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row text-center mx-auto">
+                                                <div class="col-4 pr-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row text-center mx-auto">
+                                                <div class="col-4 pr-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 px-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <div class="divDriverPhoto mx-auto">
+                                                        <img src="assets/img/passenger/icono foto.png" class="photo">
+                                                    </div>
+                                                    <h5 class="color-blue daxProRegular mb-0 mb-lg-2">Nombre y apellido</h5>
+                                                    <svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg><svg class="svgWheel" fill="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.98 20.99">
+                                                        <path d="M11.13,1.5a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,11.13,1.5Zm0,2.06A7,7,0,0,1,18,9.37H13.72a2.85,2.85,0,0,0-2.59-1.66A3,3,0,0,0,8.54,9.37H4.24A7,7,0,0,1,11.13,3.57Zm-7,7.51,4.39.69A2.76,2.76,0,0,0,10,13.16v.18l.22,4.17A7,7,0,0,1,4.15,11.08Zm7,.5a1,1,0,1,1,1-1A1,1,0,0,1,11.13,11.58ZM12,17.51l0-.53.24-3.64v-.19a2.86,2.86,0,0,0,1.41-1.4l.27,0,4.12-.65A7,7,0,0,1,12,17.51Z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="carousel-indicators mt-3 mt-lg-4 position-relative">
+                                        <li data-target="#carouselDriver" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselDriver" data-slide-to="1"></li>
+                                        <li data-target="#carouselDriver" data-slide-to="2"></li>
+                                    </ol>
+                                    <a class="carousel-control-prev" href="#carouselDriver" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselDriver" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Siguiente</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-4 col-lg-4 col-xl-4 h-100">
+                        <div id="rowInfoPassenger" class="row rowShadow flex-column align-content-center justify-content-center mx-md-auto mb-3 mb-lg-4">
+                            <div class="divProfilePhoto mx-auto">
+                                <img src="assets/img/passenger/icono foto.png" class="photo">
+                            </div>
+                            <div class="color-blue mx-auto my-2 my-lg-5">
+                                <ul class="p-0 pl-3 color-orange">
+                                    <li>
+                                        <div class="d-flex align-item-center">
+                                            <h4 id="namePassenger" class="color-blue daxProBold">Credi</h4>
+                                            <h4 id="lastPassenger" class="color-blue daxProBold ml-1">Rutas</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4 id="idtPassenger" class="color-blue daxProBold">12.345.678</h4>
+                                    </li>
+                                    <li>
+                                        <h4 id="phonePassenger" class="color-blue daxProBold">(+58) 412-123.45.67</h4>
+                                    </li>
+                                    <li>
+                                        <h4 id="emailPassenger" class="color-blue daxProBold">credirutas@email.com</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="rowCrediBlog" class="row rowShadow mx-md-auto">
+                            <div id="headerCrediBlog" class="d-flex d-inline-block bg-yellow pt-1 pl-2 color-white position-absolute">
+                                <h5 class="daxProRegular">Credi</h5>
+                                <h3 class="daxProPro">BLOG</h3>
+                            </div>
+                            <div class="w-100">
+                                <a id="linkBlog" class="ml-3" href="#">Ver</a>
+                                <div id="carouselBlog" class="carousel slide h-100" data-ride="carousel">
+                                    <div class="carousel-inner text-center">
+                                        <div class="carousel-item active">
+                                            <div class="divBlogPhoto" style="background-image: url('assets/img/passenger/icono foto.png');">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="divBlogPhoto" style="background-image: url('assets/img/passenger/icono foto.png');">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="divBlogPhoto" style="background-image: url('assets/img/passenger/icono foto.png');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselBlog" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselBlog" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Siguiente</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/views/passenger/passenger.js"></script>
+    <script src="assets/js/views/dataTables.js"></script>
+    <script src="assets/js/views/dataTables.bootstrap4.js"></script>
+
+</body>
+
+</html>
